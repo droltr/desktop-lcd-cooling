@@ -41,4 +41,5 @@ Status: ✅ done · 🔄 in progress · ⏳ planned · ❓ needs a decision.
 RGB requests are logged in `Coding/RgbLighting/cc-plugin-thermal-rgb/docs/REQUESTS.md`;
 terminal requests in `Coding/DevelopmentEnvironment/host-setup/docs/setup/`.
 | 31 | Reach the GPU LEDs afterwards | ⏳ | project `RgbLighting/gpu-rgb-rtx5080` |
-| 32 | LCD GPU column stayed blue although RPM was right | 🔄 | cause: two GPUs (amdgpu iGPU 41 °C listed first, RTX 5080 52 °C); the legacy "gpu" slot took the iGPU for temperature, load and power. Owner chose option (b): code fix `f76355e` prefers the GPU that reports fan RPM; install pending |
+| 32 | LCD GPU column stayed blue although RPM was right | ✅ | cause: two GPUs (amdgpu iGPU 41 °C listed first, RTX 5080 52 °C); the legacy "gpu" slot took the iGPU for temperature, load and power. Owner chose option (b): code fix `f76355e` prefers the GPU that reports fan RPM; installed 18:2x, owner confirmed the GPU column is correct ✅ |
+| 33 | Are all changes written to the repo of the related hardware? | ✅ | audit: pushed coolerdash branch and thermal phase 2; created private repos desktop-lcd-cooling and host-setup |
