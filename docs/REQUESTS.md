@@ -43,3 +43,7 @@ terminal requests in `Coding/DevelopmentEnvironment/host-setup/docs/setup/`.
 | 31 | Reach the GPU LEDs afterwards | ⏳ | project `RgbLighting/gpu-rgb-rtx5080` |
 | 32 | LCD GPU column stayed blue although RPM was right | ✅ | cause: two GPUs (amdgpu iGPU 41 °C listed first, RTX 5080 52 °C); the legacy "gpu" slot took the iGPU for temperature, load and power. Owner chose option (b): code fix `f76355e` prefers the GPU that reports fan RPM; installed 18:2x, owner confirmed the GPU column is correct ✅ |
 | 33 | Are all changes written to the repo of the related hardware? | ✅ | audit: pushed coolerdash branch and thermal phase 2; created private repos desktop-lcd-cooling and host-setup |
+| 34 | Update the CoolerControl/CoolerDash forks with the latest upstream changes | ⏳ | CoolerDash fork `master` is 26 commits behind upstream; rebase `zalman-alpha2-profile` on top (no pushes to upstream) |
+| 35 | Fans: wait until the owner has set the system fans to full speed in the BIOS | ⏳ owner | then calibrate `fan3`/`fan7`/`fan8`, map headers, apply profiles (`docs/setup/fan-profiles.md`) |
+| 36 | New user-wide rules (`~/.claude/CLAUDE.md`) from another session | ✅ | audit-log entry added in `Coding/PROJECT_AUDIT_LOG.md`; `.claudeignore` added to host-setup |
+| 37 | Was everything recorded? | ✅ | all 9 repos clean and pushed; missing requests and decisions added (here and in cc-plugin-thermal-rgb) |
