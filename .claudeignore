@@ -1,0 +1,19 @@
+# Secrets
+backups/
+
+# Large upstream sources (read on demand only)
+coolercontrol/
+
+# Build outputs and environments
+coolerdash/build/
+coolerdash/bin/
+.venv/
+__pycache__/
+.ruff_cache/
+zalman-cc-plugin/zalman_cc_plugin/gen/
+
+# Soft-deleted files
+.deleted/
+
+# Logs
+*.log

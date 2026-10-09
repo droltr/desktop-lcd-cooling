@@ -1,0 +1,26 @@
+# Workspace-level ignore rules. Component folders are separate git repositories
+# and are ignored here so this folder never absorbs their history.
+
+# Secrets and machine state (CoolerControl backups contain tokens and keys)
+backups/
+*.token
+cc-token
+credentials.json
+
+# Separate repositories / upstream sources
+zalman-cc-plugin/
+zalman-Alpha2-DS-LCD-Linux/
+coolerdash/
+coolercontrol/
+
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# Soft-deleted files
+.deleted/
+
+# Logs
+*.log
